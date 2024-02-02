@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="cards">
+{% for book in catalogue %}
+<div>
+<h4>{{book.getTitle}}</h4>
+<h6>{{book.getAuthor}}</h6>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
